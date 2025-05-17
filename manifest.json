@@ -4,10 +4,10 @@
     "version" : "1.0",
     "description" : "This is a farming profile visits extension, with automatic reloading of a page at defined intervals.",
     "permissions" :["scripting", "activeTab"],
+    "icons": {
+        "128": "media/icon.png"    
+    },  
     "action": {
-        "default": "popup.html",
-        "default-icon" : {
-            "16" : "media/icon.png"
-        }
+        "default_popup": "popup.html"
     }
 }
