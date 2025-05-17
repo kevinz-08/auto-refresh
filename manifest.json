@@ -7,7 +7,7 @@
     "action": {
         "default": "popup.html",
         "default-icon" : {
-            "16" : "icon.png"
+            "16" : "media/icon.png"
         }
     }
 }
