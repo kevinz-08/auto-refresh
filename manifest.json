@@ -1,0 +1,13 @@
+{
+    "manifest_version" : 3,
+    "name" : "Farming Profile Visits",
+    "version" : "1.0",
+    "description" : "This is a farming profile visits extension, with automatic reloading of a page at defined intervals.",
+    "permissions" :["scripting", "activeTab", "storage"],
+    "action": {
+        "default": "popup.html",
+        "default-icon" : {
+            "16" : "icon.png"
+        }
+    }
+}
