@@ -1,18 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Refresh</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            width: 200px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+        button {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        button.stop {
+            background: #f44336;
+        }
+        button.stop:hover {
+            background: #da190b;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .status {
+            font-size: 12px;
+            text-align: center;
+            margin: 5px 0;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-    <h3>Farming Profile Visits</h3>
-    <label>interval (seconds):</label>
-    <input type="number" id="interval" min="1" value="3">
-    <button id="start">Start</button>
-    <button id="stop">Stop</button>
-
-  <script src="popup.js"></script>  
+    <h3>Auto Reload</h3>
+    <div class="status" id="status">Inactivo</div>
+    
+    <label for="seconds">Segundos entre recargas:</label>
+    <input type="number" id="seconds" value="5" min="1" max="60">
+    
+    <button id="start">Iniciar Auto-Reload</button>
+    <button id="stop" class="stop">Detener Auto-Reload</button>
+    
+    <script src="popup.js"></script>
 </body>
 </html>
